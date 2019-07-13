@@ -1,0 +1,30 @@
+/*
+A person invests $1000.0 in a savings account yielding 5% interest. Assuming that
+all interest is left on deposit in the account, calculate and print the amount of money in he
+account at the end of each year for 10 years. Use the following formula for determining these
+amounts:a = p(1+r)^n
+p is the original investment(i.e. the principal)
+r is the annual interest rate
+n is the number of years
+a is the amount on deposit at the end of the nth year.
+*/
+
+#include<stdio.h>
+#include<math.h>
+#define r 0.05              //r is anual invest rate
+#define p 1000.0        //p is principal
+int main ()
+{
+    float a[10];              // a is amount at the end of nth year
+    int i;
+    printf("Year\t\t   Amount on deposit\n");
+    for (i=0;i<10;i++)
+    {
+        a[i]=(p)*(pow((r+1),i+1));
+        //printf("\na[%d]=(%f)*pow((%f+1),%d+1)\n",i,p,r,i);
+        printf("%d\t\t\t%.2f\n",i+1,a[i]);
+
+    }
+    system("pause");
+    return(0);
+}

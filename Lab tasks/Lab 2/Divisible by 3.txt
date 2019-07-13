@@ -1,0 +1,32 @@
+/*
+Write a program which asks the user to enter 10 numbers and prints out the message
+“even” if the number is even and “divisible by three” if the number is divisible by three.
+*/
+
+#include<stdio.h>
+int main ()
+{
+    int num[10],i;
+    for(i=0;i<10;i++)
+    {
+      printf("Enter number %d: ",i+1);
+      scanf("%d",&num[i]);
+    }
+    for(i=0;i<10;i++)
+    {
+      printf("\n%d:",num[i]);
+      if(num[i]%2==0){
+        printf(" \t %s","even");
+      if(num[i]%3==0){
+        printf("\tdivisible by 3");
+      }
+    }
+    if(num[i]%2!=0&&num[i]%3==0)
+    {
+        printf("\t\tdivisible by 3");
+    }
+    }
+
+    system("pause");
+    return(0);
+}

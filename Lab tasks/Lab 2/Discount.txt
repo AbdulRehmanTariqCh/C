@@ -1,0 +1,21 @@
+/*While purchasing certain items, a discount of 10% is offered if the quantity
+purchased is more than 1000. If quantity and price per item are input through the keyboard, write
+a program to calculate the total expenses.*/
+#include<stdio.h>
+int main()
+{
+    int quantity;
+    float unitPrice,totalPrice;
+    printf("Number of items: ");
+    scanf("%d",&quantity);
+    printf("Price per unit:  Rs.");
+    scanf("%f",&unitPrice);
+    totalPrice=unitPrice*quantity;
+    if(quantity>1000)
+        printf("Discount:        Rs.%.2f\n",0.1*totalPrice);
+        totalPrice-=(0.1*totalPrice);
+    printf("Total amount:    Rs.%.2f\n",totalPrice);
+
+    system("pause");
+    return 0;
+}

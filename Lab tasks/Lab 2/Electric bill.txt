@@ -1,0 +1,14 @@
+#include <stdio.h>
+int main()
+{
+	float units,unitPrice;
+	int subcharge;
+
+	printf("Enter the amount of units consumed: ");
+	scanf("%f",&units);
+	subcharge=(units <= 300)? 0: 5;
+	unitPrice=(units <= 300)? 3.0: 3.5;
+    printf("Total bill= %0.2f\n",(units*unitPrice)+(5.0/100.0)*(units*unitPrice));
+    system("pause");
+    return 0;
+}

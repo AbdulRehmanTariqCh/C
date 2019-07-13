@@ -1,0 +1,23 @@
+/*
+7: Write a program that reads a number and determines and prints whether it is odd or
+even.
+*/
+
+#include<stdio.h>
+int main ()
+{
+    int num;
+    printf("Enter a number: ");
+    scanf("%d",&num);
+    if(num%2==0)
+    {
+       printf("The entered number is even.\n");
+    }
+    else
+    {
+       printf("The entered number is odd.\n");
+    }
+
+    system("pause");
+    return(0);
+}
