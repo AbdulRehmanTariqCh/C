@@ -1,9 +1,8 @@
 /*
-A car park charges a £2.00 minimum fee to park for up to 3 hours, and an additional £0.50 for each hour or part hour in excess of three hours. The maximum charge for any given 24-hour period is £10.00.
+A car park charges a Â£2.00 minimum fee to park for up to 3 hours, and an additional Â£0.50 for each hour or part hour in excess of three hours. The maximum charge for any given 24-hour period is Â£10.00.
 Assume that no car parks for more than 24 hours at a time. Write a C program that will calculate and print the parking charges for each of 3 customers who parked their car in the car park yesterday.
 The program should accept as input the number of hours that each customer was parked, and output the results in a neat tabular form, along with the total receipts from the three customers.
 The program should use the function calculate_charges to determine the charge for each customer.
-
 */
 
 #include <stdio.h>
